@@ -40,7 +40,7 @@ Execute SuperpositionAI_010_setup.exe that is installer.
 After that, follow the instructions of the installer to install.
 
 ```
-## Generating detections
+## Use for now
 
 Beside the main tracking application, this repository contains a script to
 generate features for person re-identification, suitable to compare the visual
