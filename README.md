@@ -79,9 +79,9 @@ Click the Quit button to exit SuperpositionAI.
 Superposition of states
 In quantum mechanics, quanta can have multiple possible states.
 For the bracket notation mentioned above, the upward spin of the quantum and
-The formula when the downward spin of the quantum has a possibility of 50% is as follows.
+The formula when the downward spin of the quantum has a possibility of 50% is as follows.  
 
-|ψ⟩ = 1/√2(|↑⟩) + 1/√2(|↓⟩)
+|ψ⟩ = 1/$\sqrt{2}$ ( |↑⟩) + 1/$\sqrt{2}$ (|↓⟩) 
 
 In general, the quantum has multiple states (|ψ1⟩,|ψ2⟩,...,|ψN⟩)
 , the coefficients (c1,c2,...,cN) are
