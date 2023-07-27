@@ -3,8 +3,6 @@
 
 ## Introduction
 
-$\ |ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩) $
-
 This repository contains  explanation of SuperpositionAI and sample data and result data.
 I am sorry that source code of SuperpositionAI is not to release.
 ## About SuperpositionAI
@@ -46,7 +44,7 @@ After that, follow the instructions of the installer to install.
 
 Here, I will introduce the procedure for those who think that they will move it for the time being.
  
-1 Click the "Sample Movies" button.
+1. Click the "Sample Movies" button.
   
 2. A list of sample videos will be displayed in Explorer.
   Select 2_FA-18_take_off.wmv and double-click it.
@@ -85,15 +83,19 @@ The formula when the downward spin of the quantum has a possibility of 50% is as
 
 $\ |ψ⟩ = 1/\sqrt2(|↑⟩ + |↓⟩) $ 
 
-In general, the quantum has multiple states $ (|ψ_1⟩,|ψ_2⟩,...,|ψ_N⟩) $
-, the coefficients $ (c_1,c_2,...,c_N) $ are
-It will be a linear combination that takes into account. i.e.
+In general, the quantum has multiple states 
+$\ (|ψ_1⟩,|ψ_2⟩,...,|ψ_N⟩) $
+, the coefficients 
+$\ (c_1,c_2,...,c_N) $ 
+are It will be a linear combination that takes into account. i.e.
 
 $\ |ψ⟩= c_1(|ψ_1⟩) + c_2(|ψ_2⟩)+...+c_N(|ψ_N⟩) $
 
 becomes.
 SuperpositionAI binarizes the image of the target part,
-Let |↑⟩ be the white part, |↓⟩ be the black part, and cw and cb be the respective coefficients.
+Let 
+$\ |↑⟩$
+be the white part, |↓⟩ be the black part, and cw and cb be the respective coefficients.
 
 $\ |ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩) $
 
@@ -102,12 +104,14 @@ I'm doing it.
 Born rules and probabilities
 The Born rule was presented in Born's paper in 1926.
 In this rule, we obtain from the Schrödinger equation for some quantum
-An interpretation was given that the square of the absolute value of the wave function indicates the existence probability (density) of the quantum.
-In addition, the absolute value of the square of the state vector was also shown as the existence probability (density) of the quantum.
+An interpretation was given that the square of the absolute value of the wave function indicates the existence probability density of the quantum.
+In addition, the absolute value of the square of the state vector was also shown as the existence probability density of the quantum.
 Wavefunctions or state vectors are generally complex numbers. i.e.
 
 $\ 〈ψ|= (a,bi) \quad $ 
-(i is the imaginary unit)
+(
+$\ i $
+is the imaginary unit)
 
 becomes. To get the square of the absolute value for this,
 Multiply by the complex conjugate of (a,bi).
@@ -116,19 +120,28 @@ If the complex conjugate of 〈ψ| is |*ψ⟩, then the square of the absolute v
 $\ |ψ|^2 = 〈ψ|^*ψ⟩ $
 
 becomes.
-In SuperpositionAI, the complex conjugate of |ψ⟩ mentioned above is multiplied to obtain the square of the absolute value.
+In SuperpositionAI, the complex conjugate of 
+$\ |ψ⟩ $
+mentioned above is multiplied to obtain the square of the absolute value.
  
 Class determination by evaluation of target images
 SuperpositionAI uses multiple binary learning images for each class,
 Create a state vector for each class.
 This is called building trained data.
 Also, the state vector to be evaluated is created from the binary image to be evaluated.
-$\ ψ_n $ is the state vector for each class
-Let φ be the state vector to be evaluated.
-Since φ is the state vector of a binary image, it has only two states. i.e.
+$\ ψ_n $ 
+is the state vector for each class
+Let 
+$\ φ $ 
+be the state vector to be evaluated.
+Since 
+$\ φ $
+is the state vector of a binary image, it has only two states. i.e.
 
-$\ φ=(1,0i) \quad $ real part only   
-$\ φ=(0,1i) \quad $ imaginary part only   
+$\ φ=(1,0i) \quad $ 
+real part only   
+$\ φ=(0,1i) \quad $ 
+imaginary part only   
 
 By taking the inner product of φ and ψ, we can find out what φ has in ψ.
 Only the real part and only the imaginary part can be represented.
@@ -141,8 +154,12 @@ If the formula for calculating Pn is the square of the absolute value of I, then
 
 $\ P_n = |I_n| ^2 $
 
-Pn is normalized so that it falls within the range of 0 to 1.
-Pn is proportional to the probability that φ is ψn.
+$\ Pn$ 
+is normalized so that it falls within the range of 0 to 1.
+$\ P_n $
+is proportional to the probability that 
+$\ φ$
+is ψn.
 Apply this operation to all classes in the trained data.
 At this time, the class with the largest P is the class to be evaluated.
 However, if the maximum P is less than the user-configured threshold,
