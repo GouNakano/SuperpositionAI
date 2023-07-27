@@ -2,7 +2,7 @@
 
 
 ## Introduction
-
+$$a_{ij} \ (i \neq j)$$
 This repository contains  explanation of SuperpositionAI and sample data and result data.
 I am sorry that source code of SuperpositionAI is not to release.
 ## About SuperpositionAI
