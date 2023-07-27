@@ -81,19 +81,19 @@ In quantum mechanics, quanta can have multiple possible states.
 For the bracket notation mentioned above, the upward spin of the quantum and
 The formula when the downward spin of the quantum has a possibility of 50% is as follows.  
 
-|ψ⟩ = 1/$\sqrt{2}$ ( |↑⟩) + 1/$\sqrt{2}$ (|↓⟩) 
+$ |ψ⟩ = 1/\sqrt2(|↑⟩ + |↓⟩) $ 
 
-In general, the quantum has multiple states (|ψ1⟩,|ψ2⟩,...,|ψN⟩)
-, the coefficients (c1,c2,...,cN) are
+In general, the quantum has multiple states $ (|ψ_1⟩,|ψ_2⟩,...,|ψ_N⟩) $
+, the coefficients $ (c_1,c_2,...,c_N) $ are
 It will be a linear combination that takes into account. i.e.
 
-|ψ⟩= c1(|ψ1⟩) + c2(|ψ2⟩)+...+cN(|ψN⟩)
+$ |ψ⟩= c_1(|ψ_1⟩) + c_2(|ψ_2⟩)+...+c_N(|ψ_N⟩) $
 
 becomes.
 SuperpositionAI binarizes the image of the target part,
 Let |↑⟩ be the white part, |↓⟩ be the black part, and cw and cb be the respective coefficients.
 
-|ψ⟩= cw(|ψ↑⟩) + cb(|ψ↓⟩)
+$ |ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩) $
 
 I'm doing it.
  
@@ -104,13 +104,13 @@ An interpretation was given that the square of the absolute value of the wave fu
 In addition, the absolute value of the square of the state vector was also shown as the existence probability (density) of the quantum.
 Wavefunctions or state vectors are generally complex numbers. i.e.
 
-〈ψ|= (a,bi) (i is the imaginary unit)
+$〈ψ|= (a,bi) \quad $ (i is the imaginary unit) 
 
 becomes. To get the square of the absolute value for this,
 Multiply by the complex conjugate of (a,bi).
 If the complex conjugate of 〈ψ| is |*ψ⟩, then the square of the absolute value is
 
-|ψ|2 = 〈ψ|*ψ⟩
+$ |ψ|^2 = 〈ψ|^*ψ⟩ $
 
 becomes.
 In SuperpositionAI, the complex conjugate of |ψ⟩ mentioned above is multiplied to obtain the square of the absolute value.
@@ -121,22 +121,23 @@ SuperpositionAI uses multiple binary learning images for each class,
 Create a state vector for each class.
 This is called building trained data.
 Also, the state vector to be evaluated is created from the binary image to be evaluated.
-ψn is the state vector for each class
+$ ψ_n $ is the state vector for each class
 Let φ be the state vector to be evaluated.
 Since φ is the state vector of a binary image, it has only two states. i.e.
 
-φ=(1,0i) real part only
-φ=(0,1i) imaginary part only
+$ φ=(1,0i) \quad $ real part only   
+$φ=(0,1i) \quad $ imaginary part only   
+
 By taking the inner product of φ and ψ, we can find out what φ has in ψ.
 Only the real part and only the imaginary part can be represented.
 That makes the evaluation of φ against ψ. In other words, if the inner product is In,
 
-In = 〈φ|ψn⟩
+$ In = 〈φ|ψ_n⟩ $
 
 When Pn is the score that indicates the degree of similarity for each target class,
 If the formula for calculating Pn is the square of the absolute value of I, then
 
-Pn = |In|2
+$ P_n = |I_n| ^2 $
 
 Pn is normalized so that it falls within the range of 0 to 1.
 Pn is proportional to the probability that φ is ψn.
@@ -144,51 +145,34 @@ Apply this operation to all classes in the trained data.
 At this time, the class with the largest P is the class to be evaluated.
 However, if the maximum P is less than the user-configured threshold,
 Treat as Unknown class.
-
 ## Weak points of current SuperpositionAI
 
-In the top-level directory are executable scripts to execute, evaluate, and
-visualize the tracker. The main entry point is in `deep_sort_app.py`.
-This file runs the tracker on a MOTChallenge sequence.
+* In area detection, uninteresting areas such as uneven ground and weeds are detected.  
+This can lead to slowdowns due to extra load and adversely affect the detection of regions of interest.
 
-In package `deep_sort` is the main tracking code:
+* In area detection, small areas are detected and an image of the area is created.  
+Normalizing the image size before it is processed by the classifier may magnify the small image and cause it to be falsely detected as being similar to another class of shapes.
 
-* `detection.py`: Detection base class.
-* `kalman_filter.py`: A Kalman filter implementation and concrete
-   parametrization for image space filtering.
-* `linear_assignment.py`: This module contains code for min cost matching and
-   the matching cascade.
-* `iou_matching.py`: This module contains the IOU matching metric.
-* `nn_matching.py`: A module for a nearest neighbor matching metric.
-* `track.py`: The track class contains single-target track data such as Kalman
-  state, number of hits, misses, hit streak, associated feature vectors, etc.
-* `tracker.py`: This is the multi-target tracker class.
+* Objects that stick together, such as when two people are walking side by side,
+Objects cannot be separated and processed separately.
 
-The `deep_sort_app.py` expects detections in a custom format, stored in .npy
-files. These can be computed from MOTChallenge detections using
-`generate_detections.py`. We also provide
-[pre-generated detections](https://drive.google.com/open?id=1VVqtL0klSUvLnmBKS89il1EKC3IxUBVK).
+* In automobiles, since the glass portion of the automobile window cannot be detected, there are many cases where the upper and lower parts are separated and detected as independent objects.
+
+* The accuracy of region detection is not sufficient to pass a good image to Superposition's classifier.  
+This leads to insufficient demonstration of the effectiveness of image analysis using Superposition.
+
+* It is not clear whether the Superposition classifier is effective or not.
+In order to solve this problem, it is necessary to build up a track record and back it up with a well-organized theory.
 
 ## Good points of current SuperpositionAI
 
-If you find this repo useful in your research, please consider citing the following papers:
+* Even a normal PC (specs lower than a gaming PC) can run at a user-acceptable speed.  
+By the way, in image analysis software such as Yolo, without N company's graphic board and peripheral library,While it takes several minutes to process one frame, SuperpositionAI can process it in about 1/30 second to 2 seconds.  
+This is believed to contribute to the Democratize AI.
 
-    @inproceedings{Wojke2017simple,
-      title={Simple Online and Realtime Tracking with a Deep Association Metric},
-      author={Wojke, Nicolai and Bewley, Alex and Paulus, Dietrich},
-      booktitle={2017 IEEE International Conference on Image Processing (ICIP)},
-      year={2017},
-      pages={3645--3649},
-      organization={IEEE},
-      doi={10.1109/ICIP.2017.8296962}
-    }
-
-    @inproceedings{Wojke2018deep,
-      title={Deep Cosine Metric Learning for Person Re-identification},
-      author={Wojke, Nicolai and Bewley, Alex},
-      booktitle={2018 IEEE Winter Conference on Applications of Computer Vision (WACV)},
-      year={2018},
-      pages={748--756},
-      organization={IEEE},
-      doi={10.1109/WACV.2018.00087}
-    }
+* With the graphical user interface (GUI) of SuperpositionAI,
+It is possible to complete everything from the creation of learned data to the analysis of images with a single software.  
+In addition, we were able to provide a model for such operations.  
+This eliminates the need for command line operations and
+It showed the possibility that even users who are unfamiliar with PCs can operate AI.  
+This is also considered to contribute to the Democratize AI.
