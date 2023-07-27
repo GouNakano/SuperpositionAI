@@ -3,6 +3,9 @@
 
 ## Introduction
 $$a_{ij} \ (i \neq j)$$
+aaaaa
+$$|ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩)$$
+
 This repository contains  explanation of SuperpositionAI and sample data and result data.
 I am sorry that source code of SuperpositionAI is not to release.
 ## About SuperpositionAI
