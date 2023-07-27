@@ -162,6 +162,7 @@ $\ ψ $
 . In other words, if the inner product is 
 $\ I_n $
 ,  
+
 $\ In = 〈φ|ψ_n⟩ $
 
 When 
