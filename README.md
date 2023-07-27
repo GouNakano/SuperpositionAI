@@ -46,33 +46,33 @@ After that, follow the instructions of the installer to install.
 
 Here, I will introduce the procedure for those who think that they will move it for the time being.
  
-① Click the Sample Movies button.
+1 Click the "Sample Movies" button.
   
-② A list of sample videos will be displayed in Explorer.
+2. A list of sample videos will be displayed in Explorer.
   Select 2_FA-18_take_off.wmv and double-click it.
 I think that "Movies & TV" and "Windows Media Player" will be launched.
 If the video playback application cannot be started, please check the environment settings of your PC.
 If the video playback application starts, I think that the video has started playing.
 Pause and wait.
   
-③ Selection of trained data
+3. Selection of trained data
   Click the Learn Setting button on the main screen of SuperpositionAI.
 On the Learn Setting screen that appears, from the Using learned dataset combo box,
 Select fighters and click the Save button.
 Then click the Close button to close the Learn Setting screen.
-④ Arranging windows
+4. Arranging windows
   Place the SuperpositionAI window on the left side of the desktop and the video player window on the right side of the desktop.
 At this time, be careful not to overlap both windows,
 Adjust the window size of SuperpositionAI so that the aspect ratio is roughly the same.
   
-⑤ Start execution of image analysis
+5. Start execution of image analysis
   Click the Execute button on the main screen of SuperpositionAI.
 Since the entire desktop is covered with a light blue semi-transparency,
 Select the image range for your video.
 Once the selection is complete, image analysis will begin.
   
   
-⑥ Completion of image analysis
+6. Completion of image analysis
   Click the Stop button on the main screen of SuperpositionAI.
 After a while, when the Stop process is completed,
 Click the Quit button to exit SuperpositionAI.
@@ -117,7 +117,6 @@ $\ |ψ|^2 = 〈ψ|^*ψ⟩ $
 
 becomes.
 In SuperpositionAI, the complex conjugate of |ψ⟩ mentioned above is multiplied to obtain the square of the absolute value.
-
  
 Class determination by evaluation of target images
 SuperpositionAI uses multiple binary learning images for each class,
@@ -135,12 +134,12 @@ By taking the inner product of φ and ψ, we can find out what φ has in ψ.
 Only the real part and only the imaginary part can be represented.
 That makes the evaluation of φ against ψ. In other words, if the inner product is In,
 
-$ In = 〈φ|ψ_n⟩ $
+$\ In = 〈φ|ψ_n⟩ $
 
 When Pn is the score that indicates the degree of similarity for each target class,
 If the formula for calculating Pn is the square of the absolute value of I, then
 
-$ P_n = |I_n| ^2 $
+$\ P_n = |I_n| ^2 $
 
 Pn is normalized so that it falls within the range of 0 to 1.
 Pn is proportional to the probability that φ is ψn.
@@ -169,7 +168,7 @@ In order to solve this problem, it is necessary to build up a track record and b
 
 ## Good points of current SuperpositionAI
 
-* Even a normal PC (specs lower than a gaming PC) can run at a user-acceptable speed.  
+* Even a general PC (specs lower than a gaming PC) can run at a user-acceptable speed.  
 By the way, in image analysis software such as Yolo, without N company's graphic board and peripheral library,While it takes several minutes to process one frame, SuperpositionAI can process it in about 1/30 second to 2 seconds.  
 This is believed to contribute to the Democratize AI.
 
@@ -178,4 +177,3 @@ It is possible to complete everything from the creation of learned data to the a
 In addition, we were able to provide a model for such operations.  
 This eliminates the need for command line operations and
 It showed the possibility that even users who are unfamiliar with PCs can operate AI.  
-This is also considered to contribute to the Democratize AI.
