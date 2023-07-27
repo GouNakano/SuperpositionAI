@@ -95,7 +95,9 @@ becomes.
 SuperpositionAI binarizes the image of the target part,
 Let 
 $\ |↑⟩$
-be the white part, |↓⟩ be the black part, and cw and cb be the respective coefficients.
+be the white part, 
+$\ |↓⟩ $
+be the black part, and cw and cb be the respective coefficients.
 
 $\ |ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩) $
 
@@ -143,26 +145,49 @@ real part only
 $\ φ=(0,1i) \quad $ 
 imaginary part only   
 
-By taking the inner product of φ and ψ, we can find out what φ has in ψ.
+By taking the inner product of 
+$\ φ $
+and 
+$\ ψ $
+, we can find out what 
+$\ φ $
+has in 
+$\ ψ $
+.
 Only the real part and only the imaginary part can be represented.
-That makes the evaluation of φ against ψ. In other words, if the inner product is In,
-
+That makes the evaluation of 
+$\ φ $
+against 
+$\ ψ $
+. In other words, if the inner product is 
+$\ I_n $
+,  
 $\ In = 〈φ|ψ_n⟩ $
 
-When Pn is the score that indicates the degree of similarity for each target class,
-If the formula for calculating Pn is the square of the absolute value of I, then
+When 
+$\ Pn$
+is the score that indicates the degree of similarity for each target class,
+If the formula for calculating 
+$\ P_n$
+is the square of the absolute value of I, then
 
 $\ P_n = |I_n| ^2 $
 
-$\ Pn$ 
+$\ P_n$ 
 is normalized so that it falls within the range of 0 to 1.
 $\ P_n $
 is proportional to the probability that 
 $\ φ$
-is ψn.
+is 
+$\ ψ_n$
+.
 Apply this operation to all classes in the trained data.
-At this time, the class with the largest P is the class to be evaluated.
-However, if the maximum P is less than the user-configured threshold,
+At this time, the class with the largest 
+$\ P $
+is the class to be evaluated.
+However, if the maximum 
+$\ P $
+is less than the user-configured threshold,
 Treat as Unknown class.
 ## Weak points of current SuperpositionAI
 
