@@ -21,22 +21,19 @@ However, since the current version is in an experimental stage,
 Please understand that there are many cases where the expected results are not obtained.
 
 ## Dependencies of execute
-
 It is OK that PC is able to work on Windows10 or 11 and 64bit.  
 It is needless another hardware or software.
 
 ## Installation
 
-First, download from Vector site.  
+1. download from Vector site.  
 URL is blow.
-
 (後で変更する)  
 https://www.vector.co.jp/soft/winnt/business/se464889.html  
 
-Downloaded SuperpositionAI_010.zip is to unzip.
+2. Downloaded SuperpositionAI_010.zip is to unzip.
 
-Execute SuperpositionAI_010_setup.exe that is installer.
-
+3. Execute SuperpositionAI_010_setup.exe that is installer.  
 After that, follow the instructions of the installer to install.
 
 
