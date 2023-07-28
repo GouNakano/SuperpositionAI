@@ -48,7 +48,7 @@ Here, I will introduce the procedure for those who think that they will move it 
    
   ![img030](https://github.com/GouNakano/SuperpositionAI/assets/56259253/d927ba43-0b1f-4be6-998c-a2aadec68cfa)  
   
-2. A list of sample videos will be displayed in Explorer.
+2. A list of sample videos will be displayed in Explorer.  
   Select 2_FA-18_take_off.wmv and double-click it.
 I think that "Movies & TV" and "Windows Media Player" will be launched.
 If the video playback application cannot be started, please check the environment settings of your PC.
@@ -57,27 +57,29 @@ Pause and wait.
 
 ![img031](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e97dcdc5-a8da-41a0-bc8f-bf3f7786cdb0)    
 
-3. Selection of trained data
+3. Selection of trained data  
   Click the Learn Setting button on the main screen of SuperpositionAI.
 On the Learn Setting screen that appears, from the Using learned dataset combo box,
 Select fighters and click the Save button.
 Then click the Close button to close the Learn Setting screen.
-4. Arranging windows
+4. Arranging windows  
   Place the SuperpositionAI window on the left side of the desktop and the video player window on the right side of the desktop.
 At this time, be careful not to overlap both windows,
 Adjust the window size of SuperpositionAI so that the aspect ratio is roughly the same.  
 
 ![img034](https://github.com/GouNakano/SuperpositionAI/assets/56259253/9970058e-55de-49cf-8d6f-9e14867c81fd)  
 
-5. Start execution of image analysis
+5. Start execution of image analysis  
   Click the Execute button on the main screen of SuperpositionAI.
 Since the entire desktop is covered with a light blue semi-transparency,
 Select the image range for your video.
 Once the selection is complete, image analysis will begin.  
 
-![img033](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e47c7a07-a240-4a4b-bda6-628901b407f0)
-  
-6. Completion of image analysis
+![img033](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e47c7a07-a240-4a4b-bda6-628901b407f0)  
+
+![img032](https://github.com/GouNakano/SuperpositionAI/assets/56259253/a2a89c7a-d40e-4f07-b8fa-809edc070ad1)  
+
+6. Completion of image analysis  
   Click the Stop button on the main screen of SuperpositionAI.
 After a while, when the Stop process is completed,
 Click the Quit button to exit SuperpositionAI.
