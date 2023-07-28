@@ -53,8 +53,10 @@ Here, I will introduce the procedure for those who think that they will move it 
 I think that "Movies & TV" and "Windows Media Player" will be launched.
 If the video playback application cannot be started, please check the environment settings of your PC.
 If the video playback application starts, I think that the video has started playing.
-Pause and wait.
-  
+Pause and wait.  
+
+![img031](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e97dcdc5-a8da-41a0-bc8f-bf3f7786cdb0)    
+
 3. Selection of trained data
   Click the Learn Setting button on the main screen of SuperpositionAI.
 On the Learn Setting screen that appears, from the Using learned dataset combo box,
