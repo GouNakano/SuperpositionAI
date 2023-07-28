@@ -25,7 +25,6 @@ It is OK that PC is able to work on Windows10 or 11 and 64bit.
 It is needless another hardware or software.
 
 ## Installation
-
 1. download from Vector site.  
 URL is blow.
 (後で変更する)  
@@ -38,7 +37,6 @@ After that, follow the instructions of the installer to install.
 
 
 ## Use for now
-
 Here, I will introduce the procedure for those who think that they will move it for the time being.
  
 1. Click the "Sample Movies" button.
