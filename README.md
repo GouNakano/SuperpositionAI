@@ -80,7 +80,7 @@ After a while, when the Stop process is completed,
 Click the Quit button to exit SuperpositionAI.
 
 ## Quantum Superposition and Expectation Evaluation
-Superposition of states
+### Superposition of states
 In quantum mechanics, quanta can have multiple possible states.
 For the bracket notation mentioned above, the upward spin of the quantum and
 The formula when the downward spin of the quantum has a possibility of 50% is as follows.  
@@ -107,7 +107,7 @@ $\ |ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩) $
 
 I'm doing it.
  
-Born rules and probabilities
+### Born rules and probabilities
 The Born rule was presented in Born's paper in 1926.
 In this rule, we obtain from the Schrödinger equation for some quantum
 An interpretation was given that the square of the absolute value of the wave function indicates the existence probability density of the quantum.
@@ -130,7 +130,7 @@ In SuperpositionAI, the complex conjugate of
 $\ |ψ⟩ $
 mentioned above is multiplied to obtain the square of the absolute value.
  
-Class determination by evaluation of target images
+### Class determination by evaluation of target images
 SuperpositionAI uses multiple binary learning images for each class,
 Create a state vector for each class.
 This is called building trained data.
