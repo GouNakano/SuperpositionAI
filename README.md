@@ -44,7 +44,7 @@ Here, I will introduce the procedure for those who think that they will move it 
   ![img030](https://github.com/GouNakano/SuperpositionAI/assets/56259253/d927ba43-0b1f-4be6-998c-a2aadec68cfa)  
   
 2. A list of sample videos will be displayed in Explorer.  
-  Select 2_FA-18_take_off.wmv and double-click it.
+  Select "2_FA-18_take_off.wmv" and double-click it.
 I think that "Movies & TV" and "Windows Media Player" will be launched.
 If the video playback application cannot be started, please check the environment settings of your PC.
 If the video playback application starts, I think that the video has started playing.
