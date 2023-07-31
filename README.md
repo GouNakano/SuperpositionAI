@@ -112,7 +112,7 @@ The Born rule was presented in Born's paper in 1926.
 In this rule, we obtain from the Schrödinger equation for some quantum
 An interpretation was given that the square of the absolute value of the wave function indicates the existence probability density of the quantum.
 In addition, the absolute value of the square of the state vector was also shown as the existence probability density of the quantum.
-Wavefunctions or state vectors are generally complex numbers. i.e.
+Wave functions or state vectors are generally complex numbers. i.e.
 
 $\ 〈ψ|= (a,bi) \quad $ 
 (
