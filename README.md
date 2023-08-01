@@ -79,7 +79,7 @@ Once the selection is complete, image analysis will begin.
 After a while, when the Stop process is completed,
 Click the Quit button to exit SuperpositionAI.
 
-## Quantum Superposition and Expectation Evaluation
+## Quantum superposition and Evaluation of expected value
 ### Superposition of states
 In quantum mechanics, quanta can have multiple possible states.
 For the bracket notation mentioned above, the upward spin of the quantum and
@@ -98,12 +98,12 @@ $\ |ψ⟩= c_1(|ψ_1⟩) + c_2(|ψ_2⟩)+...+c_N(|ψ_N⟩) $
 becomes.
 SuperpositionAI binarizes the image of the target part,
 Let 
-$\ |↑⟩$
+$\ |ψ_↑⟩$
 be the white part, 
-$\ |↓⟩ $
+$\ |ψ_↓⟩ $
 be the black part, and cw and cb be the respective coefficients.
 
-$\ |ψ⟩ = c_w(|ψ↑⟩) + c_b(|ψ↓⟩) $
+$\ |ψ⟩ = c_w(|ψ_↑⟩) + c_b(|ψ_↓⟩) $
 
 I'm doing it.
  
