@@ -11,7 +11,7 @@ Please note that SPAI is experimental.
 SPAI can works on Windows 10/11 of 64bit,
 
 SPAI execute class separation  based thinking on quantum superposition.  
-According to Born rule,The existence probability of a quantum is proportional to the absolute value of the square of the wave function (or ket vector).  
+According to Born rule,The existence probability of a quantum is proportional to the absolute value of the square of the wave function (or ket state vector).  
 Considering the probability as the expected value, among the classes of trained data,
 Shows the class with the highest expected value.  
 Deep learning and convolutional neural networks (CNN), which have become mainstream recently,It works lightly compared to artificial intelligence.
