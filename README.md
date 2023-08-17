@@ -1,6 +1,6 @@
 # SuperpositionAI
 
-![spai](https://github.com/GouNakano/SuperpositionAI/assets/56259253/a2d51ad0-6763-4ba9-b993-4fdc6468e090)
+![spai](https://github.com/GouNakano/SuperpositionAI/assets/56259253/5ebad19b-2346-427e-9550-5a791df8d10c)
 
 ## Introduction
 
