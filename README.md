@@ -154,15 +154,15 @@ imaginary part only
 
 By taking the inner product of  
 $\ φ $
-and  
+and 
 $\ ψ $
-, we can find out what  
+, we can find out what
 $\ φ $
-has in  
+has in
 $\ ψ $
 .
 Only the real part and only the imaginary part can be represented.
-That makes the evaluation of  
+That makes the evaluation of
 $\ φ $
 against
 $\ ψ $
@@ -181,16 +181,18 @@ is the square of the absolute value of I, then
 
 $\ P_n = |I_n| ^2 $
 
-$\ P_n$  
-is normalized so that it falls within the range of 0 to 1.
+$\ P_n$
+is normalized so that it falls within the range of 0 to 1.  
 $\ P_n $
-is proportional to the probability that  
+is proportional to the probability that
 $\ φ$
-is  
+is
 $\ ψ_n$
-.
+.  
+
 Apply this operation to all classes in the trained data.
 At this time, the class with the largest  
+
 $\ P $
 is the class to be evaluated.
 However, if the maximum  
