@@ -62,10 +62,10 @@ Then click the Close button to close the Learn Setting screen.
 6. Arranging windows  
   Place the SuperpositionAI window on the left side of the desktop and the video player window on the right side of the desktop.
 At this time, be careful not to overlap both windows,
-Adjust the window size of SuperpositionAI so that the aspect ratio is roughly the same.  
-![img034](https://github.com/GouNakano/SuperpositionAI/assets/56259253/9970058e-55de-49cf-8d6f-9e14867c81fd)
+Adjust the window size of SuperpositionAI so that the aspect ratio is roughly the same.
+![img034](https://github.com/GouNakano/SuperpositionAI/assets/56259253/eb66a8ae-6073-49f6-b77c-344345aeba39)
 
-7. Start execution of image analysis  
+8. Start execution of image analysis  
   Click the Execute button on the main screen of SuperpositionAI.
 Since the entire desktop is covered with a light blue semi-transparency,
 Select the image range for your video.
