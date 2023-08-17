@@ -52,20 +52,20 @@ I think that "Movies & TV" and "Windows Media Player" will be launched.
 If the video playback application cannot be started, please check the environment settings of your PC.
 If the video playback application starts, I think that the video has started playing.
 Pause and wait.  
-![img031](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e97dcdc5-a8da-41a0-bc8f-bf3f7786cdb0)
+![img031](https://github.com/GouNakano/SuperpositionAI/assets/56259253/54820f43-a5a4-4fa9-a996-280e948ec46c)
 
-4. Selection of trained data  
+5. Selection of trained data  
   Click the Learn Setting button on the main screen of SuperpositionAI.
 On the Learn Setting screen that appears, from the Using learned dataset combo box,
 Select fighters and click the Save button.
 Then click the Close button to close the Learn Setting screen.
-5. Arranging windows  
+6. Arranging windows  
   Place the SuperpositionAI window on the left side of the desktop and the video player window on the right side of the desktop.
 At this time, be careful not to overlap both windows,
 Adjust the window size of SuperpositionAI so that the aspect ratio is roughly the same.  
 ![img034](https://github.com/GouNakano/SuperpositionAI/assets/56259253/9970058e-55de-49cf-8d6f-9e14867c81fd)
 
-6. Start execution of image analysis  
+7. Start execution of image analysis  
   Click the Execute button on the main screen of SuperpositionAI.
 Since the entire desktop is covered with a light blue semi-transparency,
 Select the image range for your video.
@@ -73,7 +73,7 @@ Once the selection is complete, image analysis will begin.
 ![img033](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e47c7a07-a240-4a4b-bda6-628901b407f0)  
 ![img032](https://github.com/GouNakano/SuperpositionAI/assets/56259253/a2a89c7a-d40e-4f07-b8fa-809edc070ad1)  
 
-7. Completion of image analysis  
+8. Completion of image analysis  
   Click the Stop button on the main screen of SuperpositionAI.
 After a while, when the Stop process is completed,
 Click the Quit button to exit SuperpositionAI.
