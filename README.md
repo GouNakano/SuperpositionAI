@@ -70,10 +70,10 @@ Adjust the window size of SuperpositionAI so that the aspect ratio is roughly th
 Since the entire desktop is covered with a light blue semi-transparency,
 Select the image range for your video.
 Once the selection is complete, image analysis will begin.  
-![img033](https://github.com/GouNakano/SuperpositionAI/assets/56259253/e47c7a07-a240-4a4b-bda6-628901b407f0)  
+![img033](https://github.com/GouNakano/SuperpositionAI/assets/56259253/9932788d-7eae-412c-9893-1378315a3270)
 ![img032](https://github.com/GouNakano/SuperpositionAI/assets/56259253/a2a89c7a-d40e-4f07-b8fa-809edc070ad1)  
 
-8. Completion of image analysis  
+9. Completion of image analysis  
   Click the Stop button on the main screen of SuperpositionAI.
 After a while, when the Stop process is completed,
 Click the Quit button to exit SuperpositionAI.
