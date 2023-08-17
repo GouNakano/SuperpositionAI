@@ -71,7 +71,7 @@ Since the entire desktop is covered with a light blue semi-transparency,
 Select the image range for your video.
 Once the selection is complete, image analysis will begin.  
 ![img033](https://github.com/GouNakano/SuperpositionAI/assets/56259253/9932788d-7eae-412c-9893-1378315a3270)
-![img032](https://github.com/GouNakano/SuperpositionAI/assets/56259253/a2a89c7a-d40e-4f07-b8fa-809edc070ad1)  
+![img032](https://github.com/GouNakano/SuperpositionAI/assets/56259253/b6af09c4-3d20-426e-980e-d29c04e5cadc)
 
 9. Completion of image analysis  
   Click the Stop button on the main screen of SuperpositionAI.
@@ -152,7 +152,7 @@ real part only
 $\ φ=(0,1i) \quad $  
 imaginary part only  
 
-By taking the inner product of  
+By taking the inner product of
 $\ φ $
 and 
 $\ ψ $
@@ -161,7 +161,7 @@ $\ φ $
 has in
 $\ ψ $
 .
-Only the real part and only the imaginary part can be represented.
+Only the real part and only the imaginary part can be represented.  
 That makes the evaluation of
 $\ φ $
 against
