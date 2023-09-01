@@ -94,7 +94,7 @@ $\ (|ψ_1⟩,|ψ_2⟩,...,|ψ_N⟩) $
 $\ (c_1,c_2,...,c_N) $  
 are It will be a linear combination that takes into account. i.e.
 
-$\ |ψ⟩= c_1(|ψ_1⟩) + c_2(|ψ_2⟩)+...+c_N(|ψ_N⟩) $
+$\ |ψ⟩= c_1|ψ_1⟩ + c_2|ψ_2⟩+...+c_N|ψ_N⟩ $
 
 becomes.
 SuperpositionAI binarizes the image of the target part,
@@ -104,7 +104,7 @@ be the white part,
 $\ |ψ_↓⟩ $
 be the black part, and cw and cb be the respective coefficients.
 
-$\ |ψ⟩ = c_w(|ψ_↑⟩) + c_b(|ψ_↓⟩) $
+$\ |ψ⟩ = c_w|ψ_↑⟩ + c_b|ψ_↓⟩ $
 
 I'm doing it.
   
